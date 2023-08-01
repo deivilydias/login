@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: #eee;
+  user-select: none;
+  object-fit: cover;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.nft {
+  user-select: none;
+  max-width: 700px;
+  margin: 19rem auto;
+  border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: 3rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  transition: 0.5s all;
+  margin-left: 65%;
+}
+.nft hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #88888855;
+  margin-top: 0;
+}
+.nft ins {
+  text-decoration: none;
+}
+.nft .main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 1rem;
+}
+.nft .main .tokenImage {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.nft .main .description {
+  margin: 0.5rem 0;
+  color: #a89ec9;
+}
+.nft .main .tokenInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nft .main .tokenInfo .price {
+  display: flex;
+  align-items: center;
+  color: #ee83e5;
+  font-weight: 700;
+}
+.nft .main .tokenInfo .price ins {
+  margin-left: -0.3rem;
+  margin-right: 0.5rem;
+}
+.nft .main .tokenInfo .duration {
+  display: flex;
+  align-items: center;
+  color: #a89ec9;
+  margin-right: 0.2rem;
+}
+.nft .main .tokenInfo .duration ins {
+  margin: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.nft .main .creator {
+  display: flex;
+  align-items: center;
+  margin-top: 0.2rem;
+  margin-bottom: -0.3rem;
+}
+.nft .main .creator ins {
+  color: #a89ec9;
+  text-decoration: none;
+}
+.nft .main .creator .wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffffff22;
+  padding: 0.3rem;
+  margin: 0;
+  margin-right: 0.5rem;
+  border-radius: 100%;
+  box-shadow: inset 0 0 0 4px #000000aa;
+}
+.nft .main .creator .wrapper img {
+  border-radius: 100%;
+  border: 1px solid #ffffff22;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  margin: 0;
+}
+.nft ::before {
+  position: fixed;
+  content: "";
+  box-shadow: 0 0 100px 40px #ffffff08;
+  top: -10%;
+  left: -100%;
+  transform: rotate(-45deg);
+  height: 60rem;
+  transition: 0.7s all;
+}
+.nft:hover {
+  border: 1px solid #ffffff44;
+  box-shadow: 0 7px 50px 10px #000000aa;
+  transform: scale(1.015);
+  filter: brightness(1.3);
+}
+.nft:hover ::before {
+  filter: brightness(0.5);
+  top: -100%;
+  left: 200%;
+}
+
+.bg {
+  position: fixed;
+  top: 0%;
+  left: 10%;
+  object-fit: cover;
+}
+.bg h1 {
+  font-size: 20rem;
+  filter: opacity(0.5);
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #480ca8;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+  user-select: none;
+  max-width: 700px;
+  overflow: hidden;;
+}
+
+.areaLogin img {
+  width: 700px;
+}
+
+.formLogin h1 {
+  padding: 0px;
+  margin: 0;
+  font-weight: 00;
+  font-size: 2.3em;
+}
+
+.formLogin p {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.formLogin input {
+  padding: 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 4px;
+  transition: all linear 160ms;
+  outline: none;
+}
+
+
+.formLogin input:focus {
+  border: 1px solid #040a5a;
+}
+
+.formLogin label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.formLogin a {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #555;
+  transition: all linear 160ms;
+}
+
+.formLogin a:hover {
+  color: #000988;
+}
+
+.btn {
+  background-color: #150072;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none !important;
+  transition: all linear 160ms;
+  cursor: pointer;
+  margin: 0 !important;
+
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #0a0064;
+
+}
